@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Animais</title>
+</head>
+<body>
+
+  <main>
+    <h1>Animais cadastrados</h1>
+    <section>
+      <hr>
+      <ul>
+        {% for animal in animais %}
+          <li>{{animal.nome}} - {{animal.raca}} - {{ animal.idade }} anos</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+  
+</body>
+</html>
