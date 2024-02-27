@@ -7,6 +7,7 @@ from django.utils.html import format_html
 @admin.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):
   list_display = ['foto_produto', 'nome', 'detalhes', 'preco', 'disponivel']
+  list_display_links = ['nome']
   list_filter = ('disponivel',)
   search_fields = ('nome', 'detalhes')
   actions = ['desabilitar_todos', 'habilitar_todos']
