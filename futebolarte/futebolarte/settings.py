@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['futebolarte-v0.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://futebolarte-v0.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://futebolarte-v0.onrender.com']
 
 
 # Application definition
