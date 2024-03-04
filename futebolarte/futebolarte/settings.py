@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#==!$@gijfkoq8qfmo4-x7--(cvo4!v(s)g3fabbwc-&=&-5t2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['futebolarte-v0.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'futebolarte-v0.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://futebolarte-v0.onrender.com']
 
