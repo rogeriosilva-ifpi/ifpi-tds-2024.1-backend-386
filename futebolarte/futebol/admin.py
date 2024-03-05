@@ -4,9 +4,19 @@ from basicos.models import Cidade
 from django.utils.html import format_html
 
 
-class JogadorInline(admin.StackedInline):
+class JogadorInline(admin.TabularInline):
   model = Jogador
+  fields = ('foto_img', 'nome', 'numero_camisa', 'foto')
+  readonly_fields = ('foto_img',)
   extra = 0
+
+  @admin.display(description='Foto')
+  def foto_img(self, obj):
+    url = 'https://placehold.co/60'
+    if (obj.foto):
+      url = obj.foto.url
+    
+    return format_html(f'<img src="{url}" width="60" />')
 
 @admin.register(Cidade)
 class CidadeAdmin(admin.ModelAdmin):
