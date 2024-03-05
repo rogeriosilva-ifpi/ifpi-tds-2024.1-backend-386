@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['app-terreno.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://app-terreno.onrender.com']
+
 
 # Application definition
 
