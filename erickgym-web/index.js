@@ -1,4 +1,4 @@
-API_URL = 'http://127.0.0.1:8000/api/exercicios'
+API_URL = 'https://erickgym-api.onrender.com/api/exercicios'
 
 function main(){
   
